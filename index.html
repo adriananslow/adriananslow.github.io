@@ -1,26 +1,81 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>My test page</title>
-    <link href="styles/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
-  </head>
-  <body>
-    <h1>Adrian Anslow - a career in data</h1>
-    <img src="images/data.jpg" alt="An image showing various forms of data being analysed" width="500px">
-    <p>This website is to show my career journey within data.</p>
-    <p>I am familiar with multiple technologies applicable throughout the end to end <a href="https://towardsdatascience.com/5-steps-of-a-data-science-project-lifecycle-26c50372b492">process</a> of</p>
-    <ul>
-        <li>obtaining</li>
-        <li>scrubbing</li>
-        <li>exploring</li>
-        <li>modelling</li>
-        <li>and interpreting data</li>
-    </ul>
-    <p>I also plan to work on new projects to help myself learn new technologies and skills.</p>
-    <p>Updates on my progress will be posted here.</p>
-    <button>Change user</button>
-    <script src="scripts/main.js"></script>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Adrian Anslow</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body class="bg-dark">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark p-3 fixed-top">
+            <div class="container-fluid">
+                <a href="" class="navbar-brand text-white">Adrian Anslow</a>
+                <button class="navbar-toggler" type="buton" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="" class="nav-link text-white">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link text-white">About</a></li>
+                        <li class="nav-item"><a href="#skills" class="nav-link text-white">Skills</a></li>
+                        <li class="nav-item"><a href="#projects" class="nav-link text-white">Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container-fluid">
+        <div class="p-3 mt-5 text-white text-center" id="hero">
+            <div class="p-5"><h1 class="display-1">Adrian Anslow</h1></div>
+            <img src="/images/Adrian-Anslow-Portrait.jpg" class="img-fluid img-thumbnail" width="300px" height="300px"  alt="Self portrait">
+            <p class="display-5">Data Engineer</p>
+        </div>
+        <div class="p-3 mt-5 text-bg-light" id="about">
+            <h3>About</h3>
+            <p>I am an experienced data professional. I collaborate with stakeholders to understand key business problems and then
+                gather, transform, analyse, and visualise data to produce solutions. I am confident at working across diverse teams,
+                geographies, and industries. I relish the challenging questions.</p>
+        </div>
+        <div class="p-3 mt-3 text-bg-secondary" id="skills">
+            <h3>Skills</h3>
+            <p><b>Data Engineering:</b> Google Cloud Certified Professional Data Engineer</p>
+            <p><b>Databases:</b> MySQL, SQL Server, Oracle, Postgres, Teradata, SAP Business Objects, AWS Athena / AWS Redshift /
+                Google BigQuery</p>
+            <p><b>Visualization:</b> Power BI [Microsoft Certified Solutions Associate (MCSA): BI Reporting], Tableau [Tableau
+                Desktop Certified Associate], AWS QuickSight, Google Data Studio, Sisense</p>
+            <p><b>Programming:</b>Python, Go, VBA, SAS, R, Git</p>
+            <p><b>Web Analytics:</b> Adobe Analytics, Google Analytics [Google Analytics Individual Qualification]</p>
+            <p><b>Automation:</b> Alteryx [Alteryx Designer Core], Airflow, dbt, Bash scripting</p>
+        </div>
+        <div class="p-3 mt-3 text-bg-light" id="projects">
+            <h3>Projects</h3>
+            <p>Here I will include information regarding any relevant Data Engineering projects I complete.</p>
+        </div>
+    </main>
+    <footer class="footer text-center bg-light py-3">
+        <div class="container">
+            <span class="text-muted">Adrian Anslow</span>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
 </html>
